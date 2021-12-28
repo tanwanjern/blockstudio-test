@@ -1,0 +1,7 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.swiper-banner .swiper-pagination{
+    bottom: 250px;
+}
