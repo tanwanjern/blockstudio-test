@@ -1,12 +1,20 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 import Banner from "../components/banner"
 import Header from "../components/header"
 import Video from "../components/video"
 import About from "../components/about"
 import Award from "../components/award"
-import Footer from "../components/Footer"
+import Footer from "../components/footer"
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const IndexPage = () => {
+
+    useEffect(()=>{
+        AOS.init();
+    }, [])
+
     return(
         <main className="relative">
             <title>Home Page</title>

@@ -1,6 +1,8 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 
 const Header = () => {
+    
+    
     return(
         <div className="absolute top-0 w-full z-50">
             <div className="row">
