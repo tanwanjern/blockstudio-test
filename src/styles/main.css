@@ -1,0 +1,26 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.swiper-banner .swiper-pagination{
+    bottom: 250px !important;
+}
+
+.btn{
+    @apply px-4 py-1 hover:opacity-80;
+}
+.btn.active{
+    @apply border-2 border-blue-600 text-blue-600;
+}
+.row{
+    @apply flex flex-row flex-wrap;
+}
+.center{
+    @apply flex flex-col justify-center items-center;
+}
+.container-article{
+    @apply container px-16;
+}
+.video-modal{
+    @apply fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-50 w-full h-full;
+}
