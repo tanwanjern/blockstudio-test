@@ -25,7 +25,7 @@ const Banner = () => {
                                         <img className="w-full h-full object-cover" src="/demo-1.jpeg" alt=""/>
                                         <div className="absolute z-20 top-0 bottom-0 left-0 right-0">
                                             <div className="h-full center">
-                                                <h1 className="w-4/5 mx-auto text-5xl font-bold text-center leading-tight mb-3">Commercial builders with pride-workmanship that values quality</h1>
+                                                <h1 className="w-4/5 mx-auto text-3xl lg:text-5xl font-bold text-center leading-tight mb-3">Commercial builders with pride-workmanship that values quality</h1>
                                                 <p className="w-3/4 mx-auto text-center">Acclaim Contractors are a highly specialised local business with over 20 years building and civil industry experience with many accolades, commendations and awards recognising the building</p>
                                             </div>
                                         </div>
@@ -41,7 +41,7 @@ const Banner = () => {
 
     const Copyright = () => {
         return(
-            <div className="absolute top-0 bottom-0 h-full z-10 w-10">
+            <div className="absolute top-0 bottom-0 h-full z-10 w-10 hidden lg:block">
                 <div className="relative block w-full h-full m-12">
                     <div className="absolute top-0 left-0 bottom-0 rotate-90 origin-[-35%_15%] whitespace-nowrap">
                         Block Studio ©Copyright. All Rights Reserved
@@ -61,8 +61,8 @@ const Banner = () => {
                     {/* Social Media */}
                 </div>
                 <div className="relative -mt-16 z-50 center">
-                    <div className="bg-white px-52 py-10 border border-black inline-block relative after:right-[-20px] after:bottom-[-10px] after:content-[''] after:w-20 after:h-20 after:absolute after:bg-white after:border-l after:border-black after:rotate-45">
-                        <h3 className="font-bold text-6xl">HOME</h3>
+                    <div className="home-custom-shape">
+                        <h3 className="font-bold text-xl lg:text-6xl">HOME</h3>
                     </div>
                 </div>
             </div>

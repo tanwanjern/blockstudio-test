@@ -16,7 +16,7 @@ const IndexPage = () => {
     }, [])
 
     return(
-        <main className="relative">
+        <main className="relative overflow-hidden">
             <title>Home Page</title>
 
             <Header/>

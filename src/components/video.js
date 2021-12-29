@@ -6,7 +6,7 @@ const Video = () => {
 
     return(
        <>
-            <div className="container mx-auto">
+            <div className="container mx-auto px-6" data-aos="zoom-in" data-aos-duration="450" data-aos-offset="100">
                 <div className="w-full aspect-video relative">
                     <img src="https://img.youtube.com/vi/DS89Vb07C-U/0.jpg" alt="" className="w-full h-full object-cover"/>
                     <div className="absolute top-0 left-0 bottom-0 right-0 z-30 center">
@@ -20,7 +20,7 @@ const Video = () => {
             </div>
             
             {showVideo && 
-                <div className="video-modal">
+                <div className="fixed top-0 bottom-0 left-0 right-0 bg-black bg-opacity-50 z-50 w-full h-full">
                     <div className="w-full h-full center">
                         <div className="w-3/4 m-auto aspect-video relative">
                             <button className="text-white w-4 h-4 ml-auto absolute top-[-35px] right-0" onClick={()=> setShowVideo(false)}>

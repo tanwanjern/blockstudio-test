@@ -3,10 +3,10 @@ import * as React from "react"
 const Footer = () => {
     return(
        <div className="bg-black pt-10 pb-16">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-6">
                 <div className="row">
-                    <div className="w-10">
-
+                    <div className="w-24 lg:flex hidden">
+                        <h1 className="text-4xl font-semibold border-t-4 border-white pt-1 text-white">B</h1>
                     </div>
                     <div className="w-1/2">
                         <ul className="row mb-6">
