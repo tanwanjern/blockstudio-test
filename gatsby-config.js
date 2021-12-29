@@ -5,16 +5,33 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-postcss',
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    `gatsby-transformer-json`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
-      __key: "images",
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+      },
+    },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        stripMetadata: true,
+        defaultQuality: 50,
+        defaults: {
+          backgroundColor: `transparent`,
+          formats: [`auto`, `webp`],
+          placeholder: `blurred`,
+        }
+      },
+    },
+    `gatsby-transformer-sharp`,
   ],
 };
