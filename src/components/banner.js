@@ -26,8 +26,8 @@ const Banner = () => {
                                         <img className="w-full h-full object-cover" src="/demo-1.jpeg" alt=""/>
                                         <div className="absolute z-20 top-0 bottom-0 left-0 right-0">
                                             <div className="h-full center">
-                                                <h1 className="w-4/5 mx-auto text-3xl lg:text-5xl font-bold text-center leading-tight mb-3">Commercial builders with pride-workmanship that values quality</h1>
-                                                <p className="w-3/4 mx-auto text-center">Acclaim Contractors are a highly specialised local business with over 20 years building and civil industry experience with many accolades, commendations and awards recognising the building</p>
+                                                <h1 className="w-4/5 xl:w-3/5 mx-auto text-3xl lg:text-5xl font-bold text-center leading-tight mb-3">Commercial builders with pride-workmanship that values quality</h1>
+                                                <p className="w-3/4 xl:w-2/4 mx-auto text-center leading-relaxed">Acclaim Contractors are a highly specialised local business with over 20 years building and civil industry experience with many accolades, commendations and awards recognising the building</p>
                                             </div>
                                         </div>
                                     </div>

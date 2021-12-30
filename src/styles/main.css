@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -15,16 +17,15 @@ a{
 }
 
 .home-custom-shape{
-    @apply relative -mt-[30px] lg:-mt-[60px] z-40 flex flex-col justify-center items-center;
+    @apply relative z-40 flex flex-col justify-center items-center;
+    @apply -mt-[30px] lg:-mt-[60px];
 }
 
 .home-custom-shape .inner{
-    @apply bg-white w-3/4 h-16 lg:h-[120px] lg:w-[400px] border border-black relative flex flex-col justify-center items-center;
-    @apply lg:after:right-[-30px] lg:after:bottom-[-30px] lg:after:w-[60px] lg:after:h-[60px];
+    @apply bg-white border border-black relative flex flex-col justify-center items-center;
+    @apply w-3/4 h-16 lg:h-[120px] lg:w-[400px];
     @apply after:right-[-15px] after:bottom-[-15px] after:w-[30px] after:h-[30px];
+    @apply lg:after:right-[-30px] lg:after:bottom-[-30px] lg:after:w-[60px] lg:after:h-[60px];
+    @apply xl:after:right-[-35px] xl:after:bottom-[-35px] xl:after:w-[70px] xl:after:h-[70px];
     @apply after:content-[''] after:absolute after:bg-white after:border-l after:border-black after:rotate-45;
-}
-
-.container-article{
-    @apply container px-16;
 }

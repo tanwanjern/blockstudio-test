@@ -60,7 +60,7 @@ const Award = () => {
                 {list.map((item, index) => (
                     <div 
                         key={item.node.id} 
-                        className={`lg:w-1/3 px-3 mb-6 ${isSecondColumn.includes(index) ? 'lg:translate-y-8' : ''}  ${isThirdColumn.includes(index) ? 'lg:translate-y-16' : ''}`}>
+                        className={`w-full lg:w-1/3 px-3 mb-6 ${isSecondColumn.includes(index) ? 'lg:translate-y-8' : ''}  ${isThirdColumn.includes(index) ? 'lg:translate-y-16' : ''}`}>
                             <div 
                                 className="border border-gray-600 relative cursor-pointer"
                                 data-aos="fade-up"
