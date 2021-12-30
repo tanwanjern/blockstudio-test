@@ -17,7 +17,7 @@ const IndexPage = () => {
 
     return(
         <main className="relative overflow-hidden">
-            <title>Home Page</title>
+            <title>Block Studio Frontend Test - Lester Tan</title>
 
             <Header/>
 

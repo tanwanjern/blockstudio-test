@@ -30,9 +30,9 @@ const Shape = ({type}) => {
                     }}>
                 </div>
                 <div 
-                    className="absolute bg-blue-600 shadow-blue-600/40 shadow-xl w-12 h-12 top-[1300px] lg:bottom-16 right-8 2xl:right-16 rounded-full z-10"
+                    className="absolute bg-blue-600 shadow-blue-600/40 shadow-xl w-12 h-12 top-[1300px] lg:top-[800px] right-8 2xl:right-16 rounded-full z-10"
                     style={{
-                        transform: `translateY(-${offset * 0.4}px)`,
+                        transform: `translateY(-${offset * 0.3}px)`,
                     }}>
                 </div>
             </>

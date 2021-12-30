@@ -24,9 +24,9 @@ const Banner = () => {
                                 <SwiperSlide key={"swiper_"+index}>
                                     <div className="relative w-full h-full bg-gray-100">
                                         {index == 0 ? 
-                                            <div className="bg-fixed bg-no-repeat bg-cover w-full h-full" style={{backgroundImage: `url('/demo-1.jpeg')`}}></div>
+                                            <div className="bg-fixed bg-no-repeat bg-cover w-full h-full" style={{backgroundImage: `url('https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')`}}></div>
                                             :
-                                            <img className="w-full h-full object-cover" src="/demo-1.jpeg" alt=""/>
+                                            <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt=""/>
                                         }
                                         
                                         <div className="absolute z-20 top-0 bottom-0 left-0 right-0">
