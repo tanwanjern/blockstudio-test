@@ -9,16 +9,16 @@ const Header = () => {
             <div className="absolute top-0 w-full z-50">
                 <div className="row">
                     <div className="flex-1">
-                        <div className="center w-20 h-20">
+                        <div className="center w-20 h-20" data-aos="flip-left" data-aos-duration="450" data-aos-delay="300">
                             <h1 className="text-4xl font-semibold border-t-4 border-black pt-1">B</h1>
                         </div>
                     </div>
                     <div className="flex-1 ml-auto">
                         <div className="row justify-end">
                             <ul className="nav flex-row gap-2 py-5 hidden lg:flex">
-                                <li><a href="" className="active">Home</a></li>
-                                <li><a href="">Website</a></li>
-                                <li><a href="">Branding</a></li>
+                                <li data-aos="fade-right" data-aos-duration="450" data-aos-delay="300"><a href="" className="active">Home</a></li>
+                                <li data-aos="fade-right" data-aos-duration="450" data-aos-delay="400"><a href="">Website</a></li>
+                                <li data-aos="fade-right" data-aos-duration="450" data-aos-delay="500"><a href="">Branding</a></li>
                             </ul>
                             <button className="bg-black text-white w-20 h-20 center ml-5" onClick={()=>setShowMenu(true)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-menu-2" width={24} height={24} viewBox="0 0 24 24" strokeWidth={1.25} stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
