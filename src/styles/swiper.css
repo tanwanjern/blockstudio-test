@@ -1,0 +1,22 @@
+.swiper-banner .swiper-pagination{
+    bottom: 280px !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    opacity: 1 !important;
+    margin: 0rem 0.75rem !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: black !important;
+}
+
+@media screen and (max-width: 992px) {
+    .swiper-banner .swiper-pagination{
+        bottom: 150px !important;
+    }
+}

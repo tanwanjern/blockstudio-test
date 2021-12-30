@@ -2,16 +2,8 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.swiper-banner .swiper-pagination{
-    bottom: 250px !important;
-}
-
-.btn{
-    @apply px-4 py-1 hover:opacity-80;
-}
-
-.btn.active{
-    @apply border-2 border-blue-600 text-blue-600;
+a{
+    @apply hover:opacity-80;
 }
 
 .row{
@@ -22,39 +14,17 @@ body{
     @apply flex flex-col justify-center items-center;
 }
 
+.home-custom-shape{
+    @apply relative -mt-[30px] lg:-mt-[60px] z-40 flex flex-col justify-center items-center;
+}
+
+.home-custom-shape .inner{
+    @apply bg-white w-3/4 h-16 lg:h-[120px] lg:w-[400px] border border-black relative flex flex-col justify-center items-center;
+    @apply lg:after:right-[-30px] lg:after:bottom-[-30px] lg:after:w-[60px] lg:after:h-[60px];
+    @apply after:right-[-15px] after:bottom-[-15px] after:w-[30px] after:h-[30px];
+    @apply after:content-[''] after:absolute after:bg-white after:border-l after:border-black after:rotate-45;
+}
+
 .container-article{
     @apply container px-16;
 }
-
-.home-custom-shape{
-    @apply bg-white w-3/4 h-16 lg:h-32 lg:w-96 border border-black relative flex flex-col justify-center items-center;
-    @apply after:right-[-20px] after:bottom-[-10px] after:content-[''] after:w-20 after:h-20 after:absolute after:bg-white after:border-l after:border-black after:rotate-45;
-}
-
-.right-menu{
-    @apply w-full lg:w-72 h-full bg-black fixed top-0 right-0 bottom-0 z-50 transform transition-all ease-linear duration-500 translate-x-full lg:translate-x-72;
-}
-
-.right-menu.active{
-    @apply translate-x-0;
-}
-
-
-.menu-enter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-.menu-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
-}
-.menu-exit {
-    opacity: 1;
-}
-.menu-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 300ms, transform 300ms;
-}
-  
