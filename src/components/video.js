@@ -8,7 +8,8 @@ const Video = () => {
        <>
             <div className="container mx-auto px-6 mt-16 lg:mt-0" data-aos="zoom-in" data-aos-duration="450" data-aos-offset="100">
                 <div className="w-full aspect-video relative">
-                    <img src="https://img.youtube.com/vi/DS89Vb07C-U/0.jpg" alt="" className="w-full h-full object-cover"/>
+                    {/* <div className="bg-fixed bg-no-repeat bg-cover w-full aspect-video" style={{backgroundImage: `url('https://img.youtube.com/vi/FonjL7DQAUQ/0.jpg')`}}></div> */}
+                    <img src="https://img.youtube.com/vi/DS89Vb07C-U/0.jpg" alt="" className="w-full h-full object-cover bg-fixed"/>
                     <div className="absolute top-0 left-0 bottom-0 right-0 z-30 center">
                         <button className="bg-white rounded-full w-24 h-24 center" onClick={()=> setShowVideo(true)}>
                             <div className="w-10 h-10 ml-2">

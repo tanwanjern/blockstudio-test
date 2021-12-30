@@ -15,9 +15,9 @@ const Footer = () => {
                             <li className="flex-1 text-center lg:text-left"><a href="" className="text-white">Branding</a></li>
                         </ul>
                         <div className="mb-8">
-                            <p className="text-white text-sm mb-2 text-center lg:text-left">T. 0202885-8586</p>
-                            <p className="text-white text-sm mb-2 text-center lg:text-left">E. info@blockstudio.tw</p>
-                            <p className="text-white text-sm mb-2 text-center lg:text-left">3F. No.2, Ln 80, Sec. 4, Chengde Rd., Shilin Dist., Taipei City 111 Taiwan</p>
+                            <p data-aos="fade-in" data-aos-offset="-400" data-aos-duration="450" className="text-white text-sm mb-2 text-center lg:text-left">T. 0202885-8586</p>
+                            <p data-aos="fade-in" data-aos-offset="-400" data-aos-duration="450" data-aos-delay="100" className="text-white text-sm mb-2 text-center lg:text-left">E. info@blockstudio.tw</p>
+                            <p data-aos="fade-in" data-aos-offset="-400" data-aos-duration="450" data-aos-delay="200" className="text-white text-sm mb-2 text-center lg:text-left">3F. No.2, Ln 80, Sec. 4, Chengde Rd., Shilin Dist., Taipei City 111 Taiwan</p>
                         </div>
                     </div>
                     <div className="flex-1">

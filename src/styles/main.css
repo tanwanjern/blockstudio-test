@@ -5,7 +5,7 @@ body{
 }
 
 a{
-    @apply hover:opacity-80;
+    @apply hover:opacity-75;
 }
 
 .row{
@@ -17,7 +17,7 @@ a{
 }
 
 .home-custom-shape{
-    @apply relative z-40 flex flex-col justify-center items-center;
+    @apply relative z-30 flex flex-col justify-center items-center;
     @apply -mt-[30px] lg:-mt-[60px];
 }
 

@@ -16,14 +16,19 @@ const Banner = () => {
                     className="swiper-banner w-full h-full"
                     modules={[Pagination]} 
                     pagination={true}
-                    autoplay={true}
+                    // autoplay={true}
                 >
                     {
                         Array(3).fill(0).map((item, index)=>{
                             return(
                                 <SwiperSlide key={"swiper_"+index}>
-                                    <div className="relative w-full h-full bg-gray-200">
-                                        <img className="w-full h-full object-cover" src="/demo-1.jpeg" alt=""/>
+                                    <div className="relative w-full h-full bg-gray-100">
+                                        {index == 0 ? 
+                                            <div className="bg-fixed bg-no-repeat bg-cover w-full h-full" style={{backgroundImage: `url('/demo-1.jpeg')`}}></div>
+                                            :
+                                            <img className="w-full h-full object-cover" src="/demo-1.jpeg" alt=""/>
+                                        }
+                                        
                                         <div className="absolute z-20 top-0 bottom-0 left-0 right-0">
                                             <div className="h-full center">
                                                 <h1 className="w-4/5 xl:w-3/5 mx-auto text-3xl lg:text-5xl font-bold text-center leading-tight mb-3">Commercial builders with pride-workmanship that values quality</h1>
@@ -54,7 +59,7 @@ const Banner = () => {
 
     const SocialMedia = () => {
         return(
-            <div className="absolute bottom-0 left-0 z-30 lg:w-56 hidden lg:flex p-10">
+            <div className="absolute bottom-0 left-0 z-40 lg:w-56 hidden lg:flex p-10">
                 <ul className="flex flex-row flex-wrap items-center mt-10 justify-between w-full">
                     <li>
                         <a href="">
@@ -78,7 +83,7 @@ const Banner = () => {
 
     return(
        <>
-            <div className="h-screen relative">
+            <div className="h-screen relative z-20">
                 <BannerSwiper/>
                 <Copyright/>
                 <SocialMedia/>   
